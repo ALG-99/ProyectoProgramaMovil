@@ -60,8 +60,9 @@
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="244dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:ems="10"
+        android:hint="Fecha"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

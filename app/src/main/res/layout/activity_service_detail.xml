@@ -10,9 +10,13 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="38dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/textView"
@@ -20,8 +24,12 @@
         android:layout_height="wrap_content"
         android:text="Servicio"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="127dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.536" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine2"
@@ -29,16 +37,25 @@
         android:layout_height="202dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Description"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="827dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintVertical_bias="0.964" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
